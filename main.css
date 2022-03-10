@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+:root{
+    --primary:#eb70f0;
+    --darck:#1B0737;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.landingContainer{
+    width:100%;
+    height:500px;
+    background-image: linear-gradient(#ecb8ea56,#ecb8ea56),url('./img/portada.jpg');
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin:auto;
+}
+
+.headerLanding{
+    width: 100%;
+    height: 70px;
+    
+}
+
+.headerLanding .nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerLanding .nav .navLinks{
+    display: flex;
+}
+
+.headerLanding .nav .navLinks li{
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+.headerLanding .nav .navLinks li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+.headerLanding .nav .navLinks li .linkButton{
+    padding:10px;
+    border-radius: 5px;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: rgb(238, 234, 234);
+    color: var(--primary);
+    box-shadow: #1B0737 0 15px 34px 2px;
+}
+
+.headerLanding .nav .navLinks li .linkButton.darck {
+    background: var(--primary);
+    color:#fff;
+}
+
+.landingHeroContainer {
+    width: 100%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.landingHero{
+    width: 80%;
+    background: #ececec2a;
+    padding: 30px 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.landingHero h1{
+    font-size: 30px;
+    color:var(--darck);
+    text-align: center;
+    margin-bottom: 10px ;
+    font-family: 'laila', sans-serif;
+}
+
+.landingHero p{
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color:var(--darck);
+}
+
+.landingHero .buttons{
+    display:flex;
+    margin-top: 30px;
+}
+.landingHero .buttons a{
+    padding: 8px 20px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+    background: var(--darck);
+    color:#fff;
+    text-decoration: none;
+    margin:0 10px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.section{
+    padding: 30px 0;
+}
+.title{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.title .line{
+    width: 100px;
+    height: 1px;
+    background: var(--darck);
+}
+.title .title .section{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 15px;
+    color: var(--darck);
+}
+
+
+.projects-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0 50px 0;
+  }
+  .project-item {
+    align-self: center;
+    overflow: hidden;
+    position: relative;
+    width: 330px;
+    height: 250px;
+    margin: 1px;
+  }
+  .project-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .project-item:hover .info {
+    display: block;
+  }
+  .info {
+    background: rgba(30, 29, 29, 0.9);
+    color: white;
+    font-family: "Comfortaa", serif;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  .info button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #5b3893;
+    border-radius: 15px;
+  }
+  .info a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .info-container {
+    top: 50%;
+    vertical-align: middle;
+  }
+
+  footer{
+    width: 100%;
+    height: 70px;
+    background-color: #de98e056;
+  }
+
+  footer p{
+      text-align:center ;
+      justify-content:last baseline;
+      flex-wrap: wrap;
+      margin: 10px 0 50px 0;
+
+      
+  }
